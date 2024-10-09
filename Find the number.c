@@ -2,7 +2,7 @@
 #include <stdlib.h> // needed for random generator
 #include <time.h>   // needed for seed rand (without the timestamp the random generated number will be always the same
 
-int main() {
+void main() {
     int random_number;
     int user_guess;
     int attempts = 0;
@@ -50,7 +50,7 @@ int main() {
             }
         } while (user_guess != random_number);
 
-        return 0;
+       
 
 
     }
@@ -84,7 +84,7 @@ int main() {
             }
         } while (user_guess != random_number);
 
-        return 0;
+        
     }
 
                   // ------------------------------------------ // 1000-10000 ------------------------------------------
@@ -118,14 +118,14 @@ int main() {
             }
         } while (user_guess != random_number);
 
-        return 0;
+       
     }
 
 
     else {
         printf_s("Invalid choice!");
     }
-    return 0;
+    return 1;
     
 
     
